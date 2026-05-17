@@ -3,36 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Bootstrap 5</title>
-    <!-- Bootstrap CSS -->
+    <title>Dev Portfolio - Bootstrap 5</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom-theme.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-semibold" href="index.html">Dev Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-sm ms-lg-2" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-    <div id="main-content">
-        <!-- Content will go here -->
-    </div>
 
-    <!-- Bootstrap JS -->
+    <main>
+        <header class="container py-5 py-lg-6">
+            <div class="row align-items-end g-4">
+                <div class="col-lg-8">
+                    <p class="text-uppercase fw-semibold text-primary mb-3">Selected work</p>
+                    <h1 class="display-3 fw-semibold lh-1 mb-4">Designer building calm, useful digital products.</h1>
+                </div>
+                <div class="col-lg-4">
+                    <p class="lead text-secondary mb-0">I design product experiences for learning, commerce, and creator tools with a focus on clarity, motion, and measurable outcomes.</p>
+                </div>
+            </div>
+        </header>
+
+        <section id="work" class="container pb-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4">
+                    <article class="card h-100 border-0 shadow-sm work-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Workspace with code editor">
+                        <div class="card-body p-4">
+                            <span class="badge text-bg-primary mb-3">Product Design</span>
+                            <h2 class="h4 card-title">FlowLearn Daily Practice</h2>
+                            <p class="card-text text-secondary">A learning loop that helps advanced students keep momentum after finishing core lessons.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                            <a class="link-primary fw-semibold text-decoration-none" href="#contact">View case study</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="card h-100 border-0 shadow-sm work-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Analytics dashboard on screens">
+                        <div class="card-body p-4">
+                            <span class="badge text-bg-success mb-3">Growth</span>
+                            <h2 class="h4 card-title">MarketOps Login Refresh</h2>
+                            <p class="card-text text-secondary">A faster account switching model for teams managing multiple high value customer profiles.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                            <a class="link-primary fw-semibold text-decoration-none" href="#contact">View case study</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <article class="card h-100 border-0 shadow-sm work-card">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Laptop showing an interface">
+                        <div class="card-body p-4">
+                            <span class="badge text-bg-warning mb-3">Research</span>
+                            <h2 class="h4 card-title">Studio Notes System</h2>
+                            <p class="card-text text-secondary">A lightweight research archive that turns interview notes into searchable design evidence.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-4 pb-4">
+                            <a class="link-primary fw-semibold text-decoration-none" href="#contact">View case study</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <p class="text-uppercase fw-semibold text-primary mb-2">About</p>
+                    <h2 class="h1 fw-semibold">I turn ambiguous product problems into clear interface systems.</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="p-4 border rounded-3 h-100">
+                                <p class="h2 fw-semibold mb-1">6+</p>
+                                <p class="text-secondary mb-0">Launches across learning, commerce, and internal tools.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-4 border rounded-3 h-100">
+                                <p class="h2 fw-semibold mb-1">14%</p>
+                                <p class="text-secondary mb-0">User growth from focused onboarding experiments.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-4 border rounded-3 h-100">
+                                <p class="h2 fw-semibold mb-1">3x</p>
+                                <p class="text-secondary mb-0">Faster research synthesis with reusable templates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container py-5">
+            <div class="row justify-content-between align-items-center g-4 border-top pt-5">
+                <div class="col-lg-7">
+                    <h2 class="h1 fw-semibold mb-3">Have a thoughtful product problem?</h2>
+                    <p class="lead text-secondary mb-0">Send a note and I will reply with portfolio details, process notes, or project availability.</p>
+                </div>
+                <div class="col-lg-auto">
+                    <a class="btn btn-primary btn-lg" href="mailto:hello@example.com">hello@example.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container py-4 border-top">
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-2 text-secondary small">
+            <span>© 2026 Dev Portfolio</span>
+            <span>Built with Bootstrap 5 grid and components.</span>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
